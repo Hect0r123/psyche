@@ -1,0 +1,103 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    overflow-x: hidden;
+}
+
+h1 {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    background-color: #2a2a2a;
+}
+
+a {
+    color: #f0f0f0;
+    text-align: center;
+}
+
+u{
+    color: rgb(40, 187, 3);
+}
+b {
+    font-size: 15px;
+    color: #1a1a1a;
+}
+
+/* Cabeçalho que aparece com atraso */
+#header {
+    display: none;
+    animation: fade-in 1s forwards 1s;
+}
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Hero Image com rolagem fixa */
+.hero-image {
+    background-image: url('fundu.png');
+    height: 80vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+}
+
+/* Conteúdo */
+.content {
+    padding: 50px;
+    text-align: center;
+}
+
+.block {
+  pointer-events: auto;
+    
+}
+.blocks {
+    pointer-events: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    
+}
+.block {
+    pointer-events: auto;
+    width: 30%;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    
+}
+
+.block img {
+    pointer-events: auto;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    
+}
+
+.block:hover {
+    pointer-events: auto;
+    transform: scale(1.05);
+    
+}
+
+
+
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2a2a2a;
+}
+
